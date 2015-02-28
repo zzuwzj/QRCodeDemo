@@ -16,13 +16,16 @@ header .title {
 }
 footer {
 	text-align: center;
+	margin: 10px;
 }
 .main-track {
 	/*width: 980px;*/
 	/*height: 500px;*/
     background: grey;
-    padding: 0;
-    margin-bottom: 20px;
+    height: 500px;
+	width:100%;
+	margin: 0;
+	padding: 0;
 }
 .main-track #track-info {
 	height: 100%;
