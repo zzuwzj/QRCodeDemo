@@ -1,33 +1,31 @@
 function init() {
-    document.body.clientWidth = 320;
-    document.body.clientHeight = 640;
-    
-    initCanvas('track-info', 300, 480);
+    initCanvas('track-info', 960, 480);
     //drawCircle('track-info', 100, 30, 5);
-    drawRect('track-info', 150, 30, 10, 10);
-    drawRect('track-info', 150, 90, 10, 10);
-    drawRect('track-info', 150, 180, 10, 10);
-    drawRect('track-info', 150, 260, 10, 10);
-    drawRect('track-info', 150, 320, 10, 10);
-    drawRect('track-info', 150, 430, 10, 10);
+    var midx = 255, rectW = 10, halfRectW = 5;
+    drawRect('track-info', midx - halfRectW, 30, rectW, rectW);
+    drawRect('track-info', midx - halfRectW, 90, rectW, rectW);
+    drawRect('track-info', midx - halfRectW, 180, rectW, rectW);
+    drawRect('track-info', midx - halfRectW, 260, rectW, rectW);
+    drawRect('track-info', midx - halfRectW, 320, rectW, rectW);
+    drawRect('track-info', midx - halfRectW, 430, rectW, rectW);
 
-    drawLine('track-info', 155, 40, 155, 90);
-    drawLine('track-info', 155, 100, 155, 180);
-    drawLine('track-info', 155, 190, 155, 260);
-    drawLine('track-info', 155, 270, 155, 320);
-    drawLine('track-info', 155, 330, 155, 430);
+    drawLine('track-info', midx, 40, midx, 90);
+    drawLine('track-info', midx, 100, midx, 180);
+    drawLine('track-info', midx, 190, midx, 260);
+    drawLine('track-info', midx, 270, midx, 320);
+    drawLine('track-info', midx, 330, midx, 430);
 
-    drawText('track-info', 155, 30, true, '采摘日期:');
-    drawText('track-info', 155, 45, true, '2015-01-01');
-    drawText('track-info', 155, 90, false, '入库冷藏日期:');
-    drawText('track-info', 155, 105, false, '2015-01-03');
-    drawText('track-info', 155, 180, true, '出库日期:');
-    drawText('track-info', 155, 195, true, '2015-01-07');
-    drawText('track-info', 155, 260, false, '冷藏运输途经河北:');
-    drawText('track-info', 155, 275, false, '2015-01-08');
-    drawText('track-info', 155, 335, true, '进入北京超市:');
-    drawText('track-info', 155, 320, true, '2015-01-09');
-    drawText('track-info', 155, 430, true, '待售中');
+    drawText('track-info', midx + halfRectW, 25, true, '采摘日期:');
+    drawText('track-info', midx + halfRectW, 40, true, '2015-01-01');
+    drawText('track-info', midx + halfRectW, 85, false, '入库冷藏日期:');
+    drawText('track-info', midx + halfRectW, 100, false, '2015-01-03');
+    drawText('track-info', midx + halfRectW, 175, true, '出库日期:');
+    drawText('track-info', midx + halfRectW, 190, true, '2015-01-07');
+    drawText('track-info', midx + halfRectW, 255, false, '冷藏运输途经河北:');
+    drawText('track-info', midx + halfRectW, 270, false, '2015-01-08');
+    drawText('track-info', midx + halfRectW, 320, true, '进入北京超市:');
+    drawText('track-info', midx + halfRectW, 335, true, '2015-01-09');
+    drawText('track-info', midx + halfRectW, 425, true, '待售中');
 }
 
 function initCanvas(id, width, height) {
