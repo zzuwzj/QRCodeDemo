@@ -1,7 +1,14 @@
 function init() {
+
+    gWinHeight = document.body.clientHeight;
+    gWinWidth = document.body.clientWidth;
+    alert(gWinWidth + "," + gWinHeight);
+
     initCanvas('track-info', 960, 480);
     //drawCircle('track-info', 100, 30, 5);
-    var midx = 255, rectW = 10, halfRectW = 5;
+    var midx = 255,
+        rectW = 10,
+        halfRectW = 5;
     drawRect('track-info', midx - halfRectW, 30, rectW, rectW);
     drawRect('track-info', midx - halfRectW, 90, rectW, rectW);
     drawRect('track-info', midx - halfRectW, 180, rectW, rectW);
