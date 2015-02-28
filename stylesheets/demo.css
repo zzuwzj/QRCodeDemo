@@ -4,10 +4,18 @@ header {
 }
 header .title {
     font-size: 2.6rem;
-    padding-left: 5%;
+    padding-left: calc(50% - 200px);
     background: green;
     color: gold;
 }
 .main-track {
-    padding-top: 10px;
+	width: 100%;
+	height: 500px;
+    background: grey;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.main-track #track-info {
+	margin: 10px;
+	background: silver;
 }
