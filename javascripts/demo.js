@@ -1,4 +1,7 @@
 function init() {
+    document.body.clientWidth = 320;
+    document.body.clientHeight = 640;
+    
     initCanvas('track-info', 300, 480);
     //drawCircle('track-info', 100, 30, 5);
     drawRect('track-info', 150, 30, 10, 10);
