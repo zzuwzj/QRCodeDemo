@@ -1,5 +1,5 @@
 function init() {
-    initCanvas('track-info', 320, 480);
+    initCanvas('track-info', 300, 480);
     //drawCircle('track-info', 100, 30, 5);
     drawRect('track-info', 150, 30, 10, 10);
     drawRect('track-info', 150, 90, 10, 10);
