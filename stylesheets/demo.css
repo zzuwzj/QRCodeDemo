@@ -15,20 +15,30 @@ header .title {
     color: gold;
 }
 footer {
+    height: 40px;
+    line-height: 40px;
     text-align: center;
-    margin: 10px;
+    color: white;
+    background: #666666;
 }
 .jumbotron {
     margin-bottom: 0;
     padding-top: 10px;
     padding-bottom: 0;
+    background-image: url(../images/011.gif);
+    background-repeat: repeat;
+}
+.jumbotron p {
+    font-size: 16px;
+    color: #006666;
 }
 .main-track {
     /*width: 980px;*/
     /*height: 500px;*/
     
-    background: grey;
-    height: 500px;
+    background-image: url(../images/003.gif);
+    background-repeat: repeat;
+    height: 600px;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -38,5 +48,8 @@ footer {
     width: 100%;
     margin: 0;
     padding: 0;
-    background: silver;
+}
+.mainImg {
+    width: 225px;
+    height: 173px;
 }

@@ -1,40 +1,42 @@
 function init() {
 
-  gWinHeight = document.body.clientHeight;
-  gWinWidth = document.body.clientWidth;
-  //alert(gWinWidth + "," + gWinHeight);
+    gWinHeight = document.body.clientHeight;
+    gWinWidth = document.body.clientWidth;
+    //alert(gWinWidth + "," + gWinHeight);
 
-  initCanvas('track-info', gWinWidth, 500);
-  //drawCircle('track-info', 100, 30, 5);
-  var midx = gWinWidth / 2,
-    rectW = 10,
-    halfRectW = 5;
-  drawRect('track-info', midx - halfRectW, 30, rectW, rectW);
-  drawRect('track-info', midx - halfRectW, 90, rectW, rectW);
-  drawRect('track-info', midx - halfRectW, 180, rectW, rectW);
-  drawRect('track-info', midx - halfRectW, 260, rectW, rectW);
-  drawRect('track-info', midx - halfRectW, 320, rectW, rectW);
-  drawRect('track-info', midx - halfRectW, 430, rectW, rectW);
+    initCanvas('track-info', gWinWidth, 600);
+    //drawCircle('track-info', 100, 30, 5);
+    var midx = gWinWidth / 2,
+        rectW = 10,
+        halfRectW = 5;
+    drawRect('track-info', midx - halfRectW, 30, rectW, rectW);
+    drawRect('track-info', midx - halfRectW, 90, rectW, rectW);
+    drawRect('track-info', midx - halfRectW, 180, rectW, rectW);
+    drawRect('track-info', midx - halfRectW, 260, rectW, rectW);
+    drawRect('track-info', midx - halfRectW, 320, rectW, rectW);
+    drawRect('track-info', midx - halfRectW, 430, rectW, rectW);
+    drawRect('track-info', midx - halfRectW, 540, rectW, rectW);
 
-  drawLine('track-info', midx, 40, midx, 90);
-  drawLine('track-info', midx, 100, midx, 180);
-  drawLine('track-info', midx, 190, midx, 260);
-  drawLine('track-info', midx, 270, midx, 320);
-  drawLine('track-info', midx, 330, midx, 430);
+    drawLine('track-info', midx, 40, midx, 90);
+    drawLine('track-info', midx, 100, midx, 180);
+    drawLine('track-info', midx, 190, midx, 260);
+    drawLine('track-info', midx, 270, midx, 320);
+    drawLine('track-info', midx, 330, midx, 430);
+    drawLine('track-info', midx, 440, midx, 540);
 
-  setTimeout(function () {
-    drawText('track-info', midx + halfRectW, 25, true, '采摘日期:');
-    drawText('track-info', midx + halfRectW, 40, true, '2015-01-01');
-    drawText('track-info', midx + halfRectW, 85, false, '入库冷藏日期:');
-    drawText('track-info', midx + halfRectW, 100, false, '2015-01-03');
-    drawText('track-info', midx + halfRectW, 175, true, '出库日期:');
-    drawText('track-info', midx + halfRectW, 190, true, '2015-01-07');
-    drawText('track-info', midx + halfRectW, 255, false, '冷藏运输途经河北:');
-    drawText('track-info', midx + halfRectW, 270, false, '2015-01-08');
-    drawText('track-info', midx + halfRectW, 320, true, '进入北京超市:');
-    drawText('track-info', midx + halfRectW, 335, true, '2015-01-09');
-    drawText('track-info', midx + halfRectW, 425, true, '待售中');
-  }, 2000);
+    drawText('track-info', midx + halfRectW, 25, true, 'xxxx年xx月xx日');
+    drawText('track-info', midx + halfRectW, 40, true, '从内黄果蔬基地采摘');
+    drawText('track-info', midx + halfRectW, 80, false, 'xxxx年xx月xx日');
+    drawText('track-info', midx + halfRectW, 100, false, '经冷藏运输至果蔬城冷库');
+    drawText('track-info', midx + halfRectW, 175, true, 'xxxx年xx月xx日');
+    drawText('track-info', midx + halfRectW, 190, true, '从果蔬城冷库运出，送至xx市');
+    drawText('track-info', midx + halfRectW, 250, false, 'xxxx年xx月xx日');
+    drawText('track-info', midx + halfRectW, 270, false, '经冷藏运输至xx市蔬菜交易市场');
+    drawText('track-info', midx + halfRectW, 315, true, 'xxxx年xx月xx日');
+    drawText('track-info', midx + halfRectW, 335, true, 'xx超市采购');
+    drawText('track-info', midx + halfRectW, 425, false, 'xxxx年xx月xx日');
+    drawText('track-info', midx + halfRectW, 445, false, '经冷藏运输至xx超市销售');
+    drawText('track-info', midx + halfRectW, 530, true, '待售中');
 }
 
 function initCanvas(id, width, height) {
