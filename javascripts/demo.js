@@ -1,42 +1,42 @@
 function init() {
 
-    gWinHeight = document.body.clientHeight;
-    gWinWidth = document.body.clientWidth;
-    //alert(gWinWidth + "," + gWinHeight);
+  gWinHeight = document.body.clientHeight;
+  gWinWidth = document.body.clientWidth;
+  //alert(gWinWidth + "," + gWinHeight);
 
-    initCanvas('track-info', gWinWidth, 600);
-    //drawCircle('track-info', 100, 30, 5);
-    var midx = gWinWidth / 2,
-        rectW = 10,
-        halfRectW = 5;
-    drawRect('track-info', midx - halfRectW, 30, rectW, rectW);
-    drawRect('track-info', midx - halfRectW, 90, rectW, rectW);
-    drawRect('track-info', midx - halfRectW, 180, rectW, rectW);
-    drawRect('track-info', midx - halfRectW, 260, rectW, rectW);
-    drawRect('track-info', midx - halfRectW, 320, rectW, rectW);
-    drawRect('track-info', midx - halfRectW, 430, rectW, rectW);
-    drawRect('track-info', midx - halfRectW, 540, rectW, rectW);
+  initCanvas('track-info', gWinWidth, 600);
+  //drawCircle('track-info', 100, 30, 5);
+  var midx = gWinWidth / 2,
+    rectW = 10,
+    halfRectW = 5;
+  drawRect('track-info', midx - halfRectW, 30, rectW, rectW);
+  drawRect('track-info', midx - halfRectW, 90, rectW, rectW);
+  drawRect('track-info', midx - halfRectW, 180, rectW, rectW);
+  drawRect('track-info', midx - halfRectW, 260, rectW, rectW);
+  drawRect('track-info', midx - halfRectW, 320, rectW, rectW);
+  drawRect('track-info', midx - halfRectW, 430, rectW, rectW);
+  drawRect('track-info', midx - halfRectW, 540, rectW, rectW);
 
-    drawLine('track-info', midx, 40, midx, 90);
-    drawLine('track-info', midx, 100, midx, 180);
-    drawLine('track-info', midx, 190, midx, 260);
-    drawLine('track-info', midx, 270, midx, 320);
-    drawLine('track-info', midx, 330, midx, 430);
-    drawLine('track-info', midx, 440, midx, 540);
+  drawLine('track-info', midx, 40, midx, 90);
+  drawLine('track-info', midx, 100, midx, 180);
+  drawLine('track-info', midx, 190, midx, 260);
+  drawLine('track-info', midx, 270, midx, 320);
+  drawLine('track-info', midx, 330, midx, 430);
+  drawLine('track-info', midx, 440, midx, 540);
 
-    drawText('track-info', midx + halfRectW, 25, true, 'xxxx年xx月xx日');
-    drawText('track-info', midx + halfRectW, 40, true, '从内黄果蔬基地采摘');
-    drawText('track-info', midx + halfRectW, 80, false, 'xxxx年xx月xx日');
-    drawText('track-info', midx + halfRectW, 100, false, '经冷藏运输至果蔬城冷库');
-    drawText('track-info', midx + halfRectW, 175, true, 'xxxx年xx月xx日');
-    drawText('track-info', midx + halfRectW, 190, true, '从果蔬城冷库运出，送至xx市');
-    drawText('track-info', midx + halfRectW, 250, false, 'xxxx年xx月xx日');
-    drawText('track-info', midx + halfRectW, 270, false, '经冷藏运输至xx市蔬菜交易市场');
-    drawText('track-info', midx + halfRectW, 315, true, 'xxxx年xx月xx日');
-    drawText('track-info', midx + halfRectW, 335, true, 'xx超市采购');
-    drawText('track-info', midx + halfRectW, 425, false, 'xxxx年xx月xx日');
-    drawText('track-info', midx + halfRectW, 445, false, '经冷藏运输至xx超市销售');
-    drawText('track-info', midx + halfRectW, 530, true, '待售中');
+  drawText('track-info', midx + halfRectW, 25, true, 'xxxx年xx月xx日');
+  drawText('track-info', midx + halfRectW, 40, true, '从内黄果蔬基地采摘');
+  drawText('track-info', midx + halfRectW, 80, false, 'xxxx年xx月xx日');
+  drawText('track-info', midx + halfRectW, 100, false, '经冷藏运输至果蔬城冷库');
+  drawText('track-info', midx + halfRectW, 175, true, 'xxxx年xx月xx日');
+  drawText('track-info', midx + halfRectW, 190, true, '从果蔬城冷库运出，送至xx市');
+  drawText('track-info', midx + halfRectW, 250, false, 'xxxx年xx月xx日');
+  drawText('track-info', midx + halfRectW, 270, false, '经冷藏运输至xx市蔬菜交易市场');
+  drawText('track-info', midx + halfRectW, 315, true, 'xxxx年xx月xx日');
+  drawText('track-info', midx + halfRectW, 335, true, 'xx超市采购');
+  drawText('track-info', midx + halfRectW, 425, false, 'xxxx年xx月xx日');
+  drawText('track-info', midx + halfRectW, 445, false, '经冷藏运输至xx超市销售');
+  drawText('track-info', midx + halfRectW, 530, true, '待售中');
 }
 
 function initCanvas(id, width, height) {
@@ -89,7 +89,7 @@ function drawLine(id, x1, y1, x2, y2) {
   var context = canvas.getContext("2d");
 
   // context.fillStyle = "blue";
-  context.strokeStyle = "blue";
+  context.strokeStyle = "#0066CC";
   context.moveTo(x1, y1);
   context.lineTo(x2, y2);
   context.stroke();
@@ -116,7 +116,7 @@ function drawText(id, midx, y, left, txt) {
   var context = canvas.getContext("2d");
   // context.fillStyle = "#EEEEFF";
   // context.fillRect(0, 0, 400, 300);
-  context.fillStyle = "#0223ff";
+  context.fillStyle = "#669900";
   context.font = "14px sans-serif";
   context.textBaseline = 'top';
 
