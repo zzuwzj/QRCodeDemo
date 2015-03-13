@@ -31,9 +31,9 @@ function init() {
   drawText('track-info', midx + halfRectW, 110, false, '果蔬城冷库');
   drawText('track-info', midx + halfRectW, 175, true, 'xxxx年xx月xx日');
   drawText('track-info', midx + halfRectW, 190, true, '从果蔬城冷库运出，送至xx市');
-  drawText('track-info', midx + halfRectW, 250, false, 'xxxx年xx月xx日');
-  drawText('track-info', midx + halfRectW, 270, false, '由园区物流冷藏运输至xx市');
-  drawText('track-info', midx + halfRectW, 290, false, '蔬菜交易市场');
+  drawText('track-info', midx + halfRectW, 240, false, 'xxxx年xx月xx日');
+  drawText('track-info', midx + halfRectW, 260, false, '由园区物流冷藏运输至xx市');
+  drawText('track-info', midx + halfRectW, 280, false, '蔬菜交易市场');
   drawText('track-info', midx + halfRectW, 305, true, 'xxxx年xx月xx日');
   drawText('track-info', midx + halfRectW, 325, true, 'xx超市采购');
   drawText('track-info', midx + halfRectW, 425, false, 'xxxx年xx月xx日');
