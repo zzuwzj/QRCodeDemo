@@ -26,7 +26,7 @@ function init() {
   drawLine('track-info', midx, 400, midx, 470);
   drawLine('track-info', midx, 480, midx, 560);
 
-  drawText('track-info', midx + halfRectW, 30, true, 'xx年xx月xx日 播种');
+  drawText('track-info', midx + halfRectW, 28, true, 'xx年xx月xx日 播种');
   // drawText('track-info', midx + halfRectW, 40, true, '播种');
 
   // drawText('track-info', midx + halfRectW, 70, false, 'xx年xx月xx日 施肥');
@@ -34,7 +34,7 @@ function init() {
   // drawText('track-info', midx + halfRectW, 110, false, '果蔬城冷库');
 
   drawText('track-info', midx + halfRectW, 175, true, 'xx年xx月xx日 采收');
-  drawText('track-info', midx + halfRectW, 190, true, '采收人员：李某某');
+  drawText('track-info', midx + halfRectW, 195, true, '采收人员：李某某');
 
   drawText('track-info', midx + halfRectW, 240, false, 'xx年xx月xx日');
   drawText('track-info', midx + halfRectW, 260, false, '由园区物流配送至果蔬城');
@@ -47,9 +47,10 @@ function init() {
   drawText('track-info', midx + halfRectW, 375, false, 'xx年xx月xx日');
   drawText('track-info', midx + halfRectW, 395, false, '入xx冷库');
 
-  drawText('track-info', midx + halfRectW, 470, true, 'xx年xx月xx日');
-  drawText('track-info', midx + halfRectW, 490, true, 'xx物流配送至XX果蔬店');
-  drawText('track-info', midx + halfRectW, 560, true, '待售中');
+  drawText('track-info', midx + halfRectW, 460, true, 'xx年xx月xx日');
+  drawText('track-info', midx + halfRectW, 480, true, 'xx物流配送至XX果蔬店');
+
+  drawText('track-info', midx + halfRectW, 558, false, '待售中');
 }
 
 function initCanvas(id, width, height) {
