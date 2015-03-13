@@ -14,17 +14,19 @@ function init() {
   drawRect('track-info', midx - halfRectW, 180, rectW, rectW);
   drawRect('track-info', midx - halfRectW, 260, rectW, rectW);
   drawRect('track-info', midx - halfRectW, 320, rectW, rectW);
-  drawRect('track-info', midx - halfRectW, 430, rectW, rectW);
-  drawRect('track-info', midx - halfRectW, 540, rectW, rectW);
+  drawRect('track-info', midx - halfRectW, 390, rectW, rectW);
+  drawRect('track-info', midx - halfRectW, 470, rectW, rectW);
+  drawRect('track-info', midx - halfRectW, 560, rectW, rectW);
 
   drawLine('track-info', midx, 40, midx, 90);
   drawLine('track-info', midx, 100, midx, 180);
   drawLine('track-info', midx, 190, midx, 260);
   drawLine('track-info', midx, 270, midx, 320);
-  drawLine('track-info', midx, 330, midx, 430);
-  drawLine('track-info', midx, 440, midx, 540);
+  drawLine('track-info', midx, 330, midx, 390);
+  drawLine('track-info', midx, 400, midx, 470);
+  drawLine('track-info', midx, 480, midx, 560);
 
-  drawText('track-info', midx + halfRectW, 25, true, 'xx年xx月xx日 播种');
+  drawText('track-info', midx + halfRectW, 30, true, 'xx年xx月xx日 播种');
   // drawText('track-info', midx + halfRectW, 40, true, '播种');
 
   // drawText('track-info', midx + halfRectW, 70, false, 'xx年xx月xx日 施肥');
@@ -39,13 +41,14 @@ function init() {
   // drawText('track-info', midx + halfRectW, 280, false, '蔬菜交易市场');
 
   drawText('track-info', midx + halfRectW, 305, true, 'xx年xx月xx日');
-  drawText('track-info', midx + halfRectW, 325, true, '检验检疫');
+  drawText('track-info', midx + halfRectW, 325, true, '果蔬城检验检疫中心');
+  drawText('track-info', midx + halfRectW, 345, true, '检验检疫');
 
-  drawText('track-info', midx + halfRectW, 425, false, 'xx年xx月xx日');
-  drawText('track-info', midx + halfRectW, 445, false, '入XX冷库');
+  drawText('track-info', midx + halfRectW, 375, false, 'xx年xx月xx日');
+  drawText('track-info', midx + halfRectW, 395, false, '入xx冷库');
 
-  drawText('track-info', midx + halfRectW, 520, true, 'xx年xx月xx日');
-  drawText('track-info', midx + halfRectW, 540, true, '配送至XX果蔬店');
+  drawText('track-info', midx + halfRectW, 470, true, 'xx年xx月xx日');
+  drawText('track-info', midx + halfRectW, 490, true, 'xx物流配送至XX果蔬店');
   drawText('track-info', midx + halfRectW, 560, true, '待售中');
 }
 
