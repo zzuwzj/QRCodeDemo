@@ -44,9 +44,9 @@ function init() {
   drawText('track-info', midx + halfRectW, 425, false, 'xx年xx月xx日');
   drawText('track-info', midx + halfRectW, 445, false, '入XX冷库');
 
-  drawText('track-info', midx + halfRectW, 540, false, 'xx年xx月xx日');
-  drawText('track-info', midx + halfRectW, 560, true, '配送至XX果蔬店');
-  drawText('track-info', midx + halfRectW, 580, true, '待售中');
+  drawText('track-info', midx + halfRectW, 500, false, 'xx年xx月xx日');
+  drawText('track-info', midx + halfRectW, 520, false, '配送至XX果蔬店');
+  drawText('track-info', midx + halfRectW, 540, false, '待售中');
 }
 
 function initCanvas(id, width, height) {
